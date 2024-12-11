@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiantes - Universidad Los Recuerdos De Ella</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1> Universidad Los Recuerdos De Ella</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <div class="container">
+                <h2>Formulario de Registro de Estudiantes</h2>
+                <form action="#" method="POST" class="form" id="registro-form">
+                    <label for="nombre" class="form-label">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="5" placeholder="Ingrese su nombre completo" class="form-input">
+
+                    <label for="matricula" class="form-label">Número de Identificación o Matrícula:</label>
+                    <input type="text" id="matricula" name="matricula" required minlength="8" placeholder="Ingrese su matrícula" class="form-input">
+
+                    <label for="correo" class="form-label">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required placeholder="Ingrese su correo electrónico" class="form-input">
+
+                    <label for="contrasena" class="form-label">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required minlength="6" placeholder="Ingrese su contraseña" class="form-input">
+
+                    <label for="carrera" class="form-label">Selección de Carrera:</label>
+                    <select id="carrera" name="carrera" required class="form-input">
+                        <option value="">Seleccione una carrera</option>
+                        <option value="ingenieria">Ingeniería-Sistemas</option>
+                        <option value="administracion">Ingenieria-Civil</option>
+                        <option value="marketing">Arquitectura</option>
+                        <option value="marketing">Medicina</option>
+                        <option value="marketing">Derecho</option>
+                        <option value="marketing">Administracion</option>
+                        <option value="marketing">Comunicacion-Social</option>
+                        <option value="marketing">Psicologia</option>
+                    </select>
+
+                    <div class="button-container">
+                        <div class="boton1">
+                            <a href="index.html" class="form-button volver">
+                                <i class="fas fa-arrow-left"></i> Volver
+                            </a>
+                            
+                        </div>
+                        <div class="boton2">
+                            <button type="submit" class="form-button">
+                                <i class="fas fa-user-plus"></i> Registrar
+                            </button>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 UNIVERSIDAD -LOS RECUERDOS DE ELLA- Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
